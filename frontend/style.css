@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F5EFE6;
+  color: #5C3A28;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+padding: 10px 60px;
+
+background-color: #F5EFE6;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+position: fixed; 
+top: 0; 
+left: 0; 
+width: 100%; 
+z-index: 1000; 
+}
+
+
+header img {
+  height: 60px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #8B5E3C;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #A67C52;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(92,58,40,0.6), rgba(92,58,40,0.6)),
+              url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #F5EFE6;
+}
+
+.btn {
+  background-color: #A67C52;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #8B5E3C;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ABOUT */
+.about {
+  background-color: #A67C52;
+  color: #F5EFE6;
+  padding: 80px 60px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-logo img {
+  width: 250px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.about-text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* VALUES */
+.values {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.values p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* EIXOS */
+.eixos {
+  background: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b') center/cover no-repeat;
+  position: relative;
+  padding: 100px 60px;
+  color: white;
+}
+
+.eixos-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.eixos h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.eixos-cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.eixo {
+  max-width: 300px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #A67C52;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.eixo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.eixo p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* NÚMEROS */
+.numeros {
+  background-color: #EDE7DF;
+  padding: 100px 60px;
+}
+
+.numeros-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.numeros-texto {
+  max-width: 600px;
+}
+
+.numeros-texto h2 {
+  font-size: 36px;
+  color: #5C3A28;
+  margin-bottom: 20px;
+}
+
+.numeros-texto p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* DADOS */
+.numeros-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.numero h3 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.numero:nth-child(1) h3 {
+  color: #5C3A28;
+}
+
+.numero:nth-child(2) h3 {
+  color: #A67C52;
+}
+
+.numero:nth-child(3) h3 {
+  color: #8B5E3C;
+}
+
+.numero span {
+  font-size: 18px;
+  color: #5C3A28;
+}
+
+/* FOOTER */
+footer {
+  background-color: #5C3A28;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.about-logo img{
+  width: 600px;
+  height: auto;
+}
+
+body {
+background-color: #F5EFE6;
+color: #5C3A28;
+
+
+padding-top: 125px;
+}
+
+.rodape-pata-viva {
+background-color: #4a2525; 
+color: #ffffff;
+padding: 30px 0;
+font-family: Arial, sans-serif;
+}
+
+.container-footer {
+display: flex; 
+justify-content: center; /* Centraliza no meio da tela */
+align-items: center; 
+gap: 75px; 
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.logo-rodape {
+width: 250px; 
+height: auto;
+display: block;
+margin: 0 auto 0px; /* Arruma e centraliza a logo */
+}
+
+.bloco-logo {
+text-align: center;
+}
+
+.bloco-info p {
+margin: 5px 0;
+font-size: 15px;
+}
+
