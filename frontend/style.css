@@ -10,6 +10,8 @@ body {
   color: #5C3A28;
 }
 
+
+
 header {
 display: flex;
 justify-content: space-between;
@@ -340,3 +342,272 @@ margin: 5px 0;
 font-size: 15px;
 }
 
+.login-btn {
+  background-color: #A67C52;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  margin-left: 15px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background-color: #8B5E3C;
+}
+
+
+/*Página de login*/
+.login-page {
+  background-color: #F5EFE6;
+}
+
+.login-page .login-container {
+  min-height: calc(100vh - 120px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page .login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-page .login-card {
+  background: white;
+  padding: 40px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-page .login-card h2 {
+  margin-bottom: 25px;
+  color: #5C3A28;
+}
+
+.login-page .login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-page .login-card input:focus {
+  border-color: #A67C52;
+}
+
+.login-page .login-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #A67C52;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-page .login-card button:hover {
+  background-color: #8B5E3C;
+}
+
+.login-page .forgot {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #8B5E3C;
+  transition: 0.3s;
+}
+
+.login-page .forgot:hover {
+  color: #A67C52;
+}
+
+/*fim da pagina login*/
+
+/* pagina sobre */
+.sobre-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(92,58,40,0.7), rgba(92,58,40,0.7)),
+              url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #F5EFE6;
+}
+
+.sobre-hero h1 {
+  font-size: 48px;
+}
+
+.sobre-hero p {
+  font-size: 18px;
+}
+
+.sobre-section {
+  padding: 80px 60px;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+.sobre-texto h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.sobre-imagem img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.sobre-mvv {
+  background-color: #A67C52;
+  padding: 60px;
+  color: #F5EFE6;
+}
+
+.mvv-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mvv-card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+}
+
+.equipe {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.equipe h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.equipe-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.membro img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.membro h3 {
+  margin: 5px 0;
+}
+
+.cta {
+  background-color: #5C3A28;
+  color: #F5EFE6;
+  text-align: center;
+  padding: 60px;
+}
+
+.cta .btn {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/*fim da página sobre*/
+
+/*página de cadastro*/
+
+.cadastro-page {
+  padding-top: 120px;
+  background-color: #F5EFE6;
+}
+
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.cadastro-card {
+  background: white;
+  padding: 40px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.cadastro-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cadastro-card h3 {
+  margin: 20px 0 10px;
+  color: #5C3A28;
+}
+
+.cadastro-card input,
+.cadastro-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.cadastro-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #A67C52;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.cadastro-card button:hover {
+  background-color: #8B5E3C;
+}
