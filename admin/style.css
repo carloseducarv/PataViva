@@ -1,0 +1,134 @@
+/* Variáveis das cores principais */
+
+:root {
+    --cor-principal: #012344;
+}
+
+
+/* ABAS */
+.tabs {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #ddd;
+    border-radius: 8px 8px 0px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15%;
+}
+
+.tab-btn.active {
+    background: var(--cor-principal);
+    color: white;
+}
+
+/* CONTEÚDO DAS ABAS */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ABA DE CADASTRO */
+
+.card {
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* FORM */
+.form-cadastro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 2%;
+}
+
+.form-cadastro label {
+    grid-column: span 2;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-cadastro input,
+.form-cadastro select,
+.form-cadastro textarea {
+    grid-column: span 2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-cadastro textarea {
+    resize: none;
+}
+
+.form-cadastro button {
+    grid-column: span 2;
+    padding: 12px;
+    background: var(--cor-principal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 25%;
+}
+
+.form-cadastro button:hover {
+    background: #02376d;
+}
+
+/* PREVIEW */
+#preview {
+    border-radius: 10px;
+    border: 2px dashed #ccc;
+    padding: 5px;
+}
+
+/* ABA DE CONSULTA */
+
+/* LISTA DE ANIMAIS */
+.lista-animais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2%;
+}
+
+/* CARD DO ANIMAL */
+.animal-card {
+    width: 180px;
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.animal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.animal-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.animal-card h3 {
+    margin-bottom: 5px;
+}
+
+.animal-card p {
+    font-size: 13px;
+    color: #555;
+}
