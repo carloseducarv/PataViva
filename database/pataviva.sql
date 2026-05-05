@@ -19,8 +19,9 @@ CREATE TABLE animais(
     especie VARCHAR(50) NOT NULL,
     sexo ENUM('m', 'f') NOT NULL,
     porte ENUM('pequeno', 'medio', 'grande') NOT NULL,
-    idade INT
+    idade INT,
     descricao TEXT,
+    foto VARCHAR(255),
     status ENUM('para adoção', 'adotado') DEFAULT 'para adoção'
 );
 
@@ -42,3 +43,14 @@ CREATE TABLE adocoes(
     dt_adocao DATE NOT NULL,
     CONSTRAINT fk_solicitacao FOREIGN KEY (sol_id) REFERENCES solicitacoes(sol_id)
 );
+
+-- TABELA ADMINISTRADOR
+CREATE TABLE administrador (
+    admin_id int AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+); 
+
+--senha pataviva123
+INSERT INTO administrador (email, senha) VALUES
+('pataviva.admin@gmail.com', '$2y$10$MO91exLB7HljUuEqJ1LDDOlNvYN/NMBcYasuupuFvJcw7aAaeSft6'); 
