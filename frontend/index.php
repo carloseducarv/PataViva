@@ -44,7 +44,9 @@ session_start();
     <div class="hero-content">
       <h1>Ajude a transformar vidas </h1>
       <p>Na PataViva, resgatamos, cuidamos e encontramos lares cheios de amor para animais que precisam.</p>
-      <button class="btn">Saiba como ajudar</button>
+      <button class="btn" onclick="window.location.href='como.php'">
+        Saiba como ajudar
+      </button>
     </div>
   </section>
 
