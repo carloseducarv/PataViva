@@ -32,6 +32,19 @@ if ($result_adocoes && $result_adocoes->num_rows > 0) {
 
     $total_adocoes = $dados_adocoes["total"];
 }
+
+$sql_doacoes = "SELECT SUM(valor) AS total FROM doacoes";
+
+$result_doacoes = $conn->query($sql_doacoes);
+
+$total_doacoes = 0;
+
+if ($result_doacoes && $result_doacoes->num_rows > 0) {
+
+    $dados_doacoes = $result_doacoes->fetch_assoc();
+
+    $total_doacoes = $dados_doacoes["total"] ?? 0;
+}
 ?>
 
 <!DOCTYPE html>
@@ -84,9 +97,11 @@ if ($result_adocoes && $result_adocoes->num_rows > 0) {
         </div>
 
         <div class="card">
-          <h3>Doações recebidas</h3>
-          <p>R$ 2.300</p>
-        </div>
+  <h3>Doações recebidas</h3>
+  <p>
+    R$ <?php echo number_format($total_doacoes, 2, ',', '.'); ?>
+  </p>
+</div>
       </section>
     </main>
 
