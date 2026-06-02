@@ -37,6 +37,17 @@ session_start();
   </nav>
 </header>
 
+<?php
+if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) {
+    echo "
+    <script>
+        alert('Doação registrada com sucesso!');
+        window.history.replaceState({}, document.title, 'como.php');
+    </script>
+    ";
+}
+?>
+
 <!-- HERO -->
 <section class="doacao-hero">
   <div class="doacao-overlay">
@@ -86,7 +97,7 @@ session_start();
 
     <h2>Fazer Doação</h2>
 
-    <form action="back_end_cli/salvar_doacao.php" method="POST">
+    <form action="salvar_doacao.php" method="POST">
 
       <label>Você já fez o PIX?</label>
       <select name="pix_feito" required>
