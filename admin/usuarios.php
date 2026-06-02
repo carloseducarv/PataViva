@@ -78,6 +78,7 @@ $resultado = $conn->query($sql);
   <title>Usuários - Pataviva</title>
 
   <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="style.css<?php echo "?v=" . time(); ?>">
 </head>
 
 <body>
@@ -179,4 +180,3 @@ $resultado = $conn->query($sql);
 
 </body>
 </html>
-```
